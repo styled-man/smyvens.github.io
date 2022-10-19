@@ -1,0 +1,40 @@
+html {
+  background: content-box radial-gradient(crismon, skyblue);
+  color: white;
+}
+
+#center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: center;
+  height: 100vh;
+}
+
+img {
+  width: 80vw;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  max-width: 50rem;
+}
+
+p {
+  text: align-center;
+  font-size: 2rem;
+}
+
+#blink {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
